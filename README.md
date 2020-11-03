@@ -17,4 +17,5 @@ A light and walk signal controlled using an arduino.
 
 http://www.signalcontrol.com/tech_papers/dialight/Dialight_LED_Ped_Modules_Spec_10-20-08.pdf
 
+Click for demonstration of training cycles.
 [![](circuit.jpg)](training.mp4)
