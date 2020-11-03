@@ -4,9 +4,9 @@ const int HAND = 12;
 const int BUTTON_POW = 27;
 const int BUTTON_IN = 26;
 
-const int GREEN = 34;
-const int YELLOW = 35;
-const int RED = 32;
+const int GREEN = 32;
+const int YELLOW = 33;
+const int RED = 25;
 
 void setup() {
   Serial.begin(9600);
@@ -15,6 +15,9 @@ void setup() {
   // Setting pins
   pinMode(WALK, OUTPUT);
   pinMode(HAND, OUTPUT);
+  pinMode(GREEN, OUTPUT);
+  pinMode(YELLOW, OUTPUT);
+  pinMode(RED, OUTPUT);
   pinMode(BUTTON_POW, OUTPUT);
   pinMode(BUTTON_IN, INPUT);
 
@@ -43,6 +46,7 @@ void cycle() {
   // Walk signal on
   state(WALK);
   state(HAND);
+  state(RED);
   state(GREEN);
   delay(TIME * 1000);
 
@@ -50,7 +54,7 @@ void cycle() {
   state(HAND);
 
   // Toggle traffic light
-  state(RED);
+  state(GREEN);
   state(YELLOW);
 
   // Flash hand and countdown timmer
