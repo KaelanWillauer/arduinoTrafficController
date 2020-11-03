@@ -1,5 +1,5 @@
 # arduinoTrafficController
-A light and walk signal controlled using an arduino.
+A light and walk signal controller using an arduino.
 
 ## Overview
  The arduinoTrafficController specifically works with a single traffic light and walk signal. Although, adding more signals would not be too difficult. As the traffic light only has 3 I/O, one for each light, the real programming lies with the walk signal. Normally the walk signal interacts with the rest of an intersection. It receives input through two terminals and gauges the count-down timer based on the information it receives. The walk signal begins in a programming phase in which it needs two full cycles of input to determine the timer. Below the important rules are summarized from http://www.signalcontrol.com/.
