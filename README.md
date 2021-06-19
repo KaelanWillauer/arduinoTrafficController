@@ -4,7 +4,7 @@ A light and walk signal controller using an arduino.
 ## Overview
  The arduinoTrafficController specifically works with a single traffic light and walk signal. Although, adding more signals would not be too difficult. As the traffic light only has 3 I/O, one for each light, the real programming lies with the walk signal. Normally the walk signal interacts with the rest of an intersection. It receives input through two terminals and gauges the count-down timer based on the information it receives. The walk signal begins in a programming phase in which it needs two full cycles of input to determine the timer. Below the important rules are summarized from http://www.signalcontrol.com/.
 
-### Stipulations
+### Rules
 * The count-down timer will only be active during a flashing hand. No other time.
 * The count-down timer will not show until the initial cycle of flashing the stop hand.
 * The count-down timer will adapt the time based on the cycles determined by the flashing hand.
@@ -17,5 +17,5 @@ A light and walk signal controller using an arduino.
 
 http://www.signalcontrol.com/tech_papers/dialight/Dialight_LED_Ped_Modules_Spec_10-20-08.pdf
 
-Click for demonstration of training cycles.
-[![](circuit.jpg)](training.mp4)
+Click for demonstration.
+[![](photos/circuit.jpg)](photos/training.mp4)
